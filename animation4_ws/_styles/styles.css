@@ -1,0 +1,130 @@
+body {
+  overflow: hidden;
+ background-color: white;
+ height: 100%;
+ width: 100%;
+ margin: 0 auto;
+ font-family: sans-serif;
+
+}
+
+h1 {
+  position: relative;
+  display: block;
+  height: 100px;
+  width: 130px;
+  color: grey;
+  margin: 0 auto;
+
+}
+
+.container {
+  margin: 0 auto;
+  width: 320px;
+  height: 480px;
+  overflow: hidden;
+  
+}
+
+.center {
+  padding-top: 200px;
+  width: 141px;
+  height: 190px;
+  margin: 0 auto;
+
+
+
+}
+
+
+
+.block1  {
+  position: absolute;
+  height: 40px;
+  width: 140px;
+  display: block;
+  background-color: #BADA55;
+  
+  -webkit-transition: 300ms ease-in-out;
+  -webkit-animation: animblock1 1000ms ease-out;
+}
+
+@-webkit-keyframes animblock1 {
+  from{
+    -webkit-transform: translateX(-1500%);
+  }
+  to{
+    -webkit-transform: translateX(0%);
+  }
+}
+
+.block2  {
+  margin-top: 70px;
+  position: absolute;
+  height: 40px;
+  width: 100px;
+  display: block;
+  background-color: #BADA55;
+  
+  opacity: 0;
+  -webkit-transition: 300ms ease-in-out;
+
+  -webkit-animation: animblock2 1000ms ease-out 1000ms forwards;
+}
+
+@-webkit-keyframes animblock2 {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.block3  {
+  margin-top: 140px;
+  position: absolute;
+  height: 40px;
+  width: 140px;
+  display: block;
+  background-color: #BADA55;
+  z-index: 20;
+  -webkit-transition: 300ms ease-in-out;
+
+  -webkit-animation: animblock3 1000ms ease-out;
+}
+
+@-webkit-keyframes animblock3 {
+  from{
+    -webkit-transform: translateX(1500%);
+  }
+  to{
+    -webkit-transform: translateX(0%);
+  }
+}
+
+
+.block_after {
+  
+  -webkit-transform:translateX(170px);
+}
+
+.textlogo {
+  opacity: 0;
+  -webkit-animation: animtextlogo 1000ms ease-out 1000ms forwards;
+}
+
+@-webkit-keyframes animtextlogo {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+ul {
+  padding-top: 30px;
+  padding-left: 50px;
+}
+

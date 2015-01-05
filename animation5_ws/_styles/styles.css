@@ -1,0 +1,76 @@
+body {
+ background-color: white;
+ width: 100%;
+ height: 100%;
+ margin: 0 auto;
+ font-family: sans-serif;
+
+}
+
+h1 {
+  position: absolute;
+  display: block;
+  height: 100px;
+  width: 320px;
+  color: grey;
+  
+
+}
+
+.container {
+  margin: 0 auto;
+  width: 320px;
+  height: 480px;
+  overflow: hidden;
+  padding-left: 15px;
+  
+}
+
+#barre {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 100px;
+  margin: 0 auto;
+}
+
+#barre { 
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
+#barre span, #barre span:before, #barre span:after {
+  cursor: pointer;
+  border-radius: 5px;
+  height: 5px;
+  width: 35px;
+  background: grey;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+#barre span:before {
+  top: -10px; 
+}
+#barre span:after {
+  top: 10px;
+}
+
+#barre span, #barre span:before, #barre span:after {
+  transition: all 200ms ease-in-out;
+}
+
+#barre.active span {
+background-color: grey;
+}
+
+#barre.active span:before, #barre.active span:after {
+  top: 0;
+}
+#barre.active span:before {
+  background-color: transparent;
+}
+#barre.active span:after {
+  background-color: transparent;
+}
